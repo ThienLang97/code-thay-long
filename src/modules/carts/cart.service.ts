@@ -69,6 +69,8 @@ export class CartService {
         cart.quantity = cart.quantity + status;
 
         return await this.cartRepository.save(cart);
+
+        
     }
 
     async deleteCartByAccountId(id: number) {
